@@ -70,6 +70,8 @@ Expected Output:
 
 */ 
 
+// let statusReg = /status:/i
+
 let statusReg = /status:/i
 let statusIndex = sampleApp.search(statusReg.Reg);
 console.log(statusIndex);
