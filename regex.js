@@ -31,7 +31,9 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
+let phoneReg = /\d{3}-\d{3}-\d{4}/g;
+let phoneArr = sampleApp.match(phoneReg);
+console.log(phoneArr);
 
 /* 
 
@@ -51,8 +53,9 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
-
+let emailReg = /[a-zA-Z]+@[a-zA-Z]+.[a-zA-Z]+/g;
+let emailArr = sampleApp.match(emailReg)
+console.log(emailArr)
 /* 
 
 Regular Expression 3: 
@@ -67,4 +70,6 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = /status:/i
+let statusIndex = sampleApp.search(statusReg.Reg);
+console.log(statusIndex);
